@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Сума прописом</title>
+</head>
+<body>
+
+<div class="main">
+    <div class="header">
+        <h1>Сума прописом</h1>
+        <p>Простий сервіс перекладу суми з цифер в прописний вигляд у відповідності до українського законодавства.</p>
+        <p>Даний сервіс буде корисний юристам, економістам та всим, хто займається складанням договорів і є необхідність суму прописувати прописом.</p>
+    </div>
+    <div class="entry-data">
+        <input id="sum" type="text" placeholder="Зазначте вашу суму" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+        <span></span>
+    </div>
+    <p id="output"></p>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
